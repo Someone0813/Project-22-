@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <p class="HeadText">Password Generator</p>
+    <div class="Password">
+    </div>
+    <div class="Character">
+        <div class="Character_Lenth">
+            <div class="Lneth_Type">
+                <span>Character Length</span>
+                <output for="MainSlider" id="Lenth_Number">0</output>
+            </div>
+            <div class="Character_Slider">
+                <input type="range" name="Solider" id="MainSlider" min="0" max="20" value="0" step="1">
+            </div>
+        </div>
+        <div class="Character_Includings">
+            <div class="Include">
+                <input type="checkbox" name="checkbox" id="checkbox1">
+                <span>Include Uppercase Letters</span>
+            </div>
+            <div class="Include">
+                <input type="checkbox" name="checkbox" id="checkbox2">
+                <span>Include Lowercase Letters</span>
+            </div>
+            <div class="Include">
+                <input type="checkbox" name="checkbox" id="checkbox3">
+                <span>Include Numbers</span>
+            </div>
+            <div class="Include">
+                <input type="checkbox" name="checkbox" id="checkbox4">
+                <span>Include Symbols</span>
+            </div>
+        </div>
+        <div class="Character_Strenght">
+            <span>STRENGHT</span>
+            <p id="Character_Strenght"></p>
+            <div class="Levels">
+                <div id="Column1"></div>
+                <div id="Column2"></div>
+                <div id="Column3"></div>
+                <div id="Column4"></div>
+            </div>
+        </div>
+        <div class="Btns">
+            <div class="Main-BTN">Get Strenght</div>
+            <div class="Main-BTN2">GENERATE</div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
